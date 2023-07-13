@@ -1,0 +1,16 @@
+INFO Test_Login.py 19 2023-07-13 15:12:07,479 titlt:账号密码正确，登录成功,param:{'username': 'debug', 'password': 'debug123qwe', 'grant_type': 'password'}
+DEBUG connectionpool.py 232 2023-07-13 15:12:07,490 Starting new HTTP connection (1): 112.74.51.178:80
+DEBUG connectionpool.py 465 2023-07-13 15:12:07,697 http://112.74.51.178:80 "POST /api/auth/oauth/token?username=debug&password=debug123qwe&grant_type=password HTTP/1.1" 200 None
+INFO Test_Login.py 21 2023-07-13 15:12:07,699 response:<Response [200]>
+INFO Test_Login.py 19 2023-07-13 15:12:07,701 titlt:密码错误，登录失败,param:{'username': 'debug', 'password': '111111', 'grant_type': 'password'}
+DEBUG connectionpool.py 232 2023-07-13 15:12:07,712 Starting new HTTP connection (1): 112.74.51.178:80
+DEBUG connectionpool.py 465 2023-07-13 15:12:07,884 http://112.74.51.178:80 "POST /api/auth/oauth/token?username=debug&password=111111&grant_type=password HTTP/1.1" 200 None
+INFO Test_Login.py 21 2023-07-13 15:12:07,885 response:<Response [200]>
+INFO Test_Login.py 19 2023-07-13 15:12:07,887 titlt:账号为空，登录失败,param:{'username': '', 'password': 'debug123qwe', 'grant_type': 'password'}
+DEBUG connectionpool.py 232 2023-07-13 15:12:07,897 Starting new HTTP connection (1): 112.74.51.178:80
+DEBUG connectionpool.py 465 2023-07-13 15:12:08,051 http://112.74.51.178:80 "POST /api/auth/oauth/token?username=&password=debug123qwe&grant_type=password HTTP/1.1" 200 None
+INFO Test_Login.py 21 2023-07-13 15:12:08,051 response:<Response [200]>
+INFO Test_Login.py 19 2023-07-13 15:12:08,052 titlt:密码为空，登录失败,param:{'username': 'debug', 'password': '', 'grant_type': 'password'}
+DEBUG connectionpool.py 232 2023-07-13 15:12:08,054 Starting new HTTP connection (1): 112.74.51.178:80
+DEBUG connectionpool.py 465 2023-07-13 15:12:08,224 http://112.74.51.178:80 "POST /api/auth/oauth/token?username=debug&password=&grant_type=password HTTP/1.1" 200 None
+INFO Test_Login.py 21 2023-07-13 15:12:08,225 response:<Response [200]>
