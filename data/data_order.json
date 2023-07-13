@@ -1,0 +1,68 @@
+{
+  "test_order_search": [
+    {
+      "title": "未添加筛选项查询，查询成功",
+      "param": {
+        "orderId": "",
+        "carNumber": "",
+        "stubId": "",
+        "endInfo": "",
+        "stubGroupName": "",
+        "merchantName": "",
+        "inputTwo": "",
+        "timeBegin": "",
+        "timeEnd": "",
+        "city": "",
+        "current": 1,
+        "size": 10,
+        "appkey": "",
+        "cspId":"",
+        "timeSelect": "",
+        "isMerchant":"",
+        "connectivityKeyword":""},
+      "assert":{"response_code": 200,"msg": "success"}},
+    {
+      "title": "全部筛选项查询，查询成功",
+      "param": {
+        "orderId": "20230331171211572120",
+        "carNumber": "闽E566",
+        "stubId": "30001009",
+        "endInfo": "正常",
+        "stubGroupName": "新页工厂开发桩群",
+        "merchantName": "海南省发展控股有限公司",
+        "inputTwo": "15980849273",
+        "timeBegin": "2023-03-01+00:00:00",
+        "timeEnd": "2023-03-31+23:59:59",
+        "city": "",
+        "current": 1,
+        "size": 10,
+        "appkey": "",
+        "cspId":"",
+        "timeSelect": "",
+        "isMerchant":"",
+        "connectivityKeyword":""},
+      "assert":{"response_code": 200,"msg": "success"}
+    },
+  {
+      "title": "订单列表默认筛选项查询，查询成功",
+      "param": {
+        "orderId": "",
+        "carNumber": "",
+        "stubId": "",
+        "endInfo": "",
+        "stubGroupName": "",
+        "merchantName": "",
+        "inputTwo": "",
+        "timeBegin": "2023-03-31+00:00:00",
+        "timeEnd": "2023-03-31+23:59:59",
+        "city": "",
+        "current": 1,
+        "size": 10,
+        "appkey": "",
+        "cspId":"",
+        "timeSelect": "",
+        "isMerchant":"",
+        "connectivityKeyword":""},
+      "assert":{"response_code": 200,"msg": "success"}
+    }]
+      }
